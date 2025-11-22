@@ -4,8 +4,6 @@ Academate is an intelligent agent that helps students navigate college life. Bui
 
 Students can ask questions like "When is my next exam?" or "Who teaches Data Structures?" instead of searching through portals.
 
-## Category 1: The Pitch (Problem · Solution · Value)
-
 ### Problem — Fragmented Campus Knowledge
 
 Students juggle portals, PDFs, and email threads just to answer basic questions: *When is the next lab exam? Which professor handles AI Ethics?* The cognitive load is high, response time is slow, and important deadlines slip. Administrative teams already maintain the data; what is missing is a single, trustworthy interface that speaks the student's language.
@@ -37,15 +35,9 @@ Academate turns those static datasets into a conversational experience. A Gemini
 
 The project evolved across the 5-day track: Day 1 prototypes established the Gemini + ADK loop, Days 2–3 layered tools and memory, Day 4 added logging plus evaluation, and Day 5 packaged everything into the `Academate-College-Chatbot.ipynb` story and README rubric mapping you see here.
 
-## Problem Statement
-
-College information is scattered across portals, PDFs, and email threads. Students waste time looking up exam schedules, who teaches a course, or which events are coming up. Academate centralizes that experience by letting students ask a single question in natural language and receive a grounded answer backed by campus data.
-
 ## Why Agents?
 
 Agents shine when a task requires reasoning plus deterministic tool use. Academate uses Gemini for planning and natural language, then routes to CSV-backed tools to retrieve facts. This loop means the responses stay conversational yet auditable—a strong fit for student services.
-
-## Category 2: The Implementation (Architecture & Code)
 
 ### Technical Architecture
 
@@ -53,6 +45,16 @@ Agents shine when a task requires reasoning plus deterministic tool use. Academa
 2.  **Reasoning & Tooling:** Gemini 2.5 Flash Lite plans the response, then calls functions in `chatbot/tools.py`, which in turn query cached CSVs via `chatbot/datasets.py`.
 3.  **Memory & State:** `chatbot/memory.py` manages an in-process transcript list so multi-turn chats reuse prior answers without re-querying every dataset.
 4.  **Observability & Quality:** `chatbot/observability.py` appends structured JSON lines to `logs/agent.log`, while `chatbot/evaluation.py` offers deterministic pre-flight checks mirrored in notebook Step 8.
+
+## How It's Built (Architecture)
+
+![Architecture Diagram](assets/graph_image.png)
+
+1.  **The Start:** It all begins in `chatbot/runtime.py`, which sets up the agent for the web or command line.
+2.  **The Brains:** Gemini figures out what you want and picks a tool from `chatbot/tools.py`, like `get_exam_schedule` or `get_faculty_info`.
+3.  **The Muscle:** The selected tool runs, querying CSVs via `chatbot/datasets.py` and returning results.
+4.  **Memory & Observability:** `chatbot/memory.py` keeps track of the conversation, while `chatbot/observability.py` logs every interaction.
+5.  **Quality Control:** Before any demo, `chatbot/evaluation.py` runs checks to ensure everything works as expected.
 
 ### Key Concepts Demonstrated
 
@@ -185,16 +187,6 @@ tail -n 20 logs/agent.log
 ## Deployment Notes
 
 The agent currently runs locally through the ADK CLI (`python -m chatbot.main`) or web runner (`adk web Academate`). If you deploy to Cloud Run or Agent Engine, capture the endpoint URL and describe the steps in your submission for the deployment bonus.
-
-## How It's Built (Architecture)
-
-![Architecture Diagram](assets/graph_image.png)
-
-1.  **The Start:** It all begins in `chatbot/runtime.py`, which sets up the agent for the web or command line.
-2.  **The Brains:** Gemini figures out what you want and picks a tool from `chatbot/tools.py`, like `get_exam_schedule` or `get_faculty_info`.
-3.  **The Muscle:** The selected tool runs, querying CSVs via `chatbot/datasets.py` and returning results.
-4.  **Memory & Observability:** `chatbot/memory.py` keeps track of the conversation, while `chatbot/observability.py` logs every interaction.
-5.  **Quality Control:** Before any demo, `chatbot/evaluation.py` runs checks to ensure everything works as expected.
 
 ## Feature Summary for Rubric
 

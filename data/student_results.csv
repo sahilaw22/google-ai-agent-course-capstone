@@ -1,0 +1,7 @@
+student_id,subject_code,subject_name,semester,academic_year,exam_type,marks_obtained,total_marks,grade,credits,grade_points,result_status,declared_date
+CS2024001,CS201,Programming in Java,2,2023-24,End-Term,85,100,A,4,9,Pass,2024-05-15
+CS2024001,CS202,Data Communications,2,2023-24,End-Term,78,100,B+,4,8,Pass,2024-05-15
+CS2024004,CS401,Database Systems,4,2023-24,End-Term,92,100,O,4,10,Pass,2024-05-15
+CS2024004,CS402,Operating Systems,4,2023-24,End-Term,88,100,A+,4,9,Pass,2024-05-15
+EE2024001,EE301,Circuit Theory,3,2023-24,End-Term,75,100,B+,4,8,Pass,2024-05-15
+CE2024002,CE701,Structural Analysis,7,2023-24,End-Term,65,100,B,4,7,Pass,2024-05-15

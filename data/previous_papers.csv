@@ -1,0 +1,8 @@
+paper_id,subject_code,subject_name,department,semester,exam_year,paper_type,file_url,total_marks
+PAPER2023001,CS301,Data Structures and Algorithms,Computer Science,3,2023,Mid-Term,https://college.edu/papers/2023/cs301-midterm.pdf,100
+PAPER2023002,CS301,Data Structures and Algorithms,Computer Science,3,2023,End-Term,https://college.edu/papers/2023/cs301-endterm.pdf,100
+PAPER2022001,CS301,Data Structures and Algorithms,Computer Science,3,2022,Mid-Term,https://college.edu/papers/2022/cs301-midterm.pdf,100
+PAPER2023003,CS501,Web Development,Computer Science,5,2023,End-Term,https://college.edu/papers/2023/cs501-endterm.pdf,100
+PAPER2023004,CS701,Artificial Intelligence,Computer Science,7,2023,End-Term,https://college.edu/papers/2023/cs701-endterm.pdf,100
+PAPER2023005,EE401,Signals and Systems,Electrical Engineering,4,2023,Mid-Term,https://college.edu/papers/2023/ee401-midterm.pdf,100
+PAPER2023006,CE201,Engineering Mechanics,Civil Engineering,2,2023,End-Term,https://college.edu/papers/2023/ce201-endterm.pdf,100

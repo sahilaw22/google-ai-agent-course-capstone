@@ -1,0 +1,8 @@
+event_id,event_name,event_type,event_date,end_date,description,applicable_to,academic_year,is_holiday
+CAL2024001,Mid-Term Examinations,Exam,2024-11-15,2024-11-25,Mid-term exams for all semesters,All,2024-25,false
+CAL2024002,Diwali Break,Holiday,2024-11-02,2024-11-05,Diwali festival holidays,All,2024-25,true
+CAL2024003,Project Submission Deadline,Deadline,2024-12-05,,Final project submission for all semesters,All,2024-25,false
+CAL2024004,Next Semester Registration,Registration,2024-12-15,2024-12-20,Course registration for next semester,All,2024-25,false
+CAL2024005,Annual Sports Day,Event,2024-12-10,2024-12-11,Inter-department sports competition,All,2024-25,false
+CAL2024006,Guest Lecture on AI,Lecture,2024-11-28,,Guest lecture by Industry Expert,Computer Science,2024-25,false
+CAL2024007,Fee Payment Deadline,Deadline,2024-12-01,,Last date for semester fee payment,All,2024-25,false

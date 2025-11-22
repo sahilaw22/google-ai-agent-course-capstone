@@ -1,0 +1,17 @@
+department,semester,section,day_of_week,period_number,start_time,end_time,subject_code,subject_name,faculty_name,room_number,class_type,academic_year
+Computer Science,3,A,Monday,1,09:00,10:00,CS301,Data Structures and Algorithms,Dr. Ramesh Verma,CS-101,Lecture,2024-25
+Computer Science,3,A,Monday,2,10:00,11:00,CS302,Database Management Systems,Prof. Anjali Mehta,CS-102,Lecture,2024-25
+Computer Science,3,A,Monday,3,11:30,12:30,CS303,Operating Systems,Dr. Ramesh Verma,CS-101,Lecture,2024-25
+Computer Science,3,A,Tuesday,1,09:00,11:00,CS301,Data Structures Lab,Dr. Ramesh Verma,CS-Lab1,Lab,2024-25
+Computer Science,5,B,Monday,1,09:00,10:00,CS501,Web Development,Dr. Emily Chen,CS-201,Lecture,2024-25
+Computer Science,5,B,Wednesday,2,10:00,11:00,CS502,Computer Networks,Dr. Emily Chen,CS-202,Lecture,2024-25
+Computer Science,7,A,Tuesday,3,14:00,15:00,CS701,Artificial Intelligence,Dr. Ramesh Verma,CS-301,Lecture,2024-25
+Electrical Engineering,4,A,Thursday,1,09:00,10:00,EE401,Signals and Systems,Dr. Neha Gupta,EE-101,Lecture,2024-25
+Electrical Engineering,6,B,Friday,2,11:00,12:00,EE601,Power Systems Analysis,Dr. Neha Gupta,EE-201,Lecture,2024-25
+Civil Engineering,2,A,Monday,1,09:00,10:00,CE201,Engineering Mechanics,Prof. Rajesh Kumar,CE-101,Lecture,2024-25
+Civil Engineering,8,A,Wednesday,3,14:00,15:00,CE801,Construction Management,Prof. Rajesh Kumar,CE-301,Lecture,2024-25
+Mechanical Engineering,5,B,Tuesday,1,10:00,11:00,ME501,Thermal Engineering,Dr. Suresh Patel,ME-201,Lecture,2024-25
+Computer Science,3,A,Tuesday,3,11:30,12:30,CS302,Database Management Systems,Prof. Anjali Mehta,CS-102,Lecture,2024-25
+Computer Science,3,A,Wednesday,1,09:00,10:00,CS303,Operating Systems,Dr. Ramesh Verma,CS-101,Lecture,2024-25
+Computer Science,2,A,Monday,1,09:00,10:00,CS201,Object Oriented Programming,Prof. Anjali Mehta,CS-103,Lecture,2024-25
+Computer Science,2,A,Monday,2,10:00,11:00,CS202,Discrete Mathematics,Dr. Ramesh Verma,CS-104,Lecture,2024-25

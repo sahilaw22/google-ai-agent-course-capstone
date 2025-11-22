@@ -1,0 +1,14 @@
+exam_id,subject_code,subject_name,department,semester,academic_year,exam_date,exam_time,duration_minutes,room_number,exam_type,total_marks
+EXAM2024001,CS301,Data Structures and Algorithms,Computer Science,3,2024-25,2024-11-18,09:00,180,Hall A,Mid-Term,100
+EXAM2024002,CS302,Database Management Systems,Computer Science,3,2024-25,2024-11-20,14:00,180,Hall B,Mid-Term,100
+EXAM2024003,CS303,Operating Systems,Computer Science,3,2024-25,2024-11-23,09:00,180,Hall A,Mid-Term,100
+EXAM2024004,ME501,Thermal Engineering,Mechanical Engineering,5,2024-25,2024-11-22,09:00,180,Hall C,Mid-Term,100
+EXAM2024005,CS501,Web Development,Computer Science,5,2024-25,2024-12-01,10:00,180,Hall A,End-Term,100
+EXAM2024006,CS502,Computer Networks,Computer Science,5,2024-25,2024-12-03,10:00,180,Hall B,End-Term,100
+EXAM2024007,CS701,Artificial Intelligence,Computer Science,7,2024-25,2024-12-05,14:00,180,Hall A,End-Term,100
+EXAM2024008,EE401,Signals and Systems,Electrical Engineering,4,2024-25,2024-11-25,09:00,180,Hall D,Mid-Term,100
+EXAM2024009,EE601,Power Systems Analysis,Electrical Engineering,6,2024-25,2024-12-02,14:00,180,Hall D,End-Term,100
+EXAM2024010,CE201,Engineering Mechanics,Civil Engineering,2,2024-25,2024-11-19,09:00,180,Hall E,Mid-Term,100
+EXAM2024011,CE801,Construction Management,Civil Engineering,8,2024-25,2024-12-10,10:00,180,Hall E,End-Term,100
+EXAM2024005,CS201,Object Oriented Programming,Computer Science,2,2024-25,2024-11-19,09:00,180,Hall A,Mid-Term,100
+EXAM2024006,CS202,Discrete Mathematics,Computer Science,2,2024-25,2024-11-21,14:00,180,Hall B,Mid-Term,100

@@ -1,0 +1,12 @@
+student_id,name,email,department,semester,section,academic_year,phone
+CS2024001,Rahul Sharma,rahul.sharma@college.edu,Computer Science,3,A,2024-25,9876543210
+CS2024002,Priya Singh,priya.singh@college.edu,Computer Science,3,A,2024-25,9876543211
+CS2024003,Sneha Gupta,sneha.gupta@college.edu,Computer Science,2,A,2024-25,9876543213
+CS2024004,Vikram Malhotra,vikram.malhotra@college.edu,Computer Science,5,B,2024-25,9876543214
+CS2024005,Ananya Das,ananya.das@college.edu,Computer Science,7,A,2024-25,9876543215
+ME2024001,Amit Kumar,amit.kumar@college.edu,Mechanical Engineering,5,B,2024-25,9876543212
+ME2024002,Rohan Verma,rohan.verma@college.edu,Mechanical Engineering,3,A,2024-25,9876543216
+EE2024001,Kavita Reddy,kavita.reddy@college.edu,Electrical Engineering,4,A,2024-25,9876543217
+EE2024002,Arjun Nair,arjun.nair@college.edu,Electrical Engineering,6,B,2024-25,9876543218
+CE2024001,Meera Iyer,meera.iyer@college.edu,Civil Engineering,2,A,2024-25,9876543219
+CE2024002,Siddharth Rao,siddharth.rao@college.edu,Civil Engineering,8,A,2024-25,9876543220

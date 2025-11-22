@@ -1,0 +1,8 @@
+faculty_id,name,email,department,designation,specialization,phone,office_location,office_hours,research_interests
+FAC001,Dr. Ramesh Verma,ramesh.verma@college.edu,Computer Science,Professor,"Machine Learning, AI",9876540001,"CS Block, Room 305","Mon-Fri 14:00-16:00","Deep Learning, NLP"
+FAC002,Prof. Anjali Mehta,anjali.mehta@college.edu,Computer Science,Associate Professor,"Database Systems, Big Data",9876540002,"CS Block, Room 308","Tue-Thu 15:00-17:00","Database Optimization, Cloud"
+FAC003,Dr. Suresh Patel,suresh.patel@college.edu,Mechanical Engineering,Professor,"Thermodynamics, Heat Transfer",9876540003,"ME Block, Room 205","Mon-Wed 11:00-13:00","Energy Systems, Renewables"
+FAC004,Dr. Neha Gupta,neha.gupta@college.edu,Electrical Engineering,Assistant Professor,"Power Systems, Smart Grid",9876540004,"EE Block, Room 101","Mon-Fri 10:00-12:00","Renewable Energy Integration"
+FAC005,Prof. Rajesh Kumar,rajesh.kumar@college.edu,Civil Engineering,Professor,"Structural Engineering, Concrete",9876540005,"CE Block, Room 402","Wed-Fri 14:00-16:00","Earthquake Resistant Structures"
+FAC006,Dr. Emily Chen,emily.chen@college.edu,Computer Science,Assistant Professor,"Cybersecurity, Networks",9876540006,"CS Block, Room 310","Mon-Thu 09:00-11:00","Network Security, Cryptography"
+FAC007,Mr. Amit Shah,amit.shah@college.edu,Mechanical Engineering,Lecturer,"Robotics, CAD/CAM",9876540007,"ME Block, Room 208","Tue-Thu 13:00-15:00","Industrial Automation"

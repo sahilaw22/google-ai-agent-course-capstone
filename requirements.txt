@@ -1,0 +1,11 @@
+# Academate - Intelligent College Assistant Agent
+# Python Dependencies
+
+# Google AI Agent Development Kit
+google-adk==1.18.0
+
+# Google Generative AI
+google-genai
+
+# Environment Management
+python-dotenv>=1.0.0

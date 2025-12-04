@@ -157,21 +157,27 @@ python -c "from chatbot.evaluation import run_evaluations; print(run_evaluations
 
 Deploy Academate to the cloud with **Vercel** or **Netlify** for global access!
 
-### Quick Deploy
+### ⚡ Quick Deploy (5 minutes)
+
+Want to deploy right now? Check out the [**QUICKSTART.md**](QUICKSTART.md) for a 5-minute deployment guide!
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/sahilaw22/google-ai-agent-course-capstone)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sahilaw22/google-ai-agent-course-capstone)
 
-### Deployment Guide
+### 📚 Documentation
 
-For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
+- **[QUICKSTART.md](QUICKSTART.md)** - Get deployed in 5 minutes
+- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Complete deployment guide with troubleshooting
 
-**Key Features:**
-- ✅ Web-based chat interface
-- ✅ Serverless deployment (no server management)
-- ✅ Automatic scaling
-- ✅ Free tier available on both platforms
-- ✅ Custom domain support
+### ✨ What You Get
+
+- ✅ **Beautiful Web Interface** - Modern chat UI accessible from any device
+- ✅ **Serverless Deployment** - No server management required
+- ✅ **Automatic Scaling** - Handles traffic spikes automatically
+- ✅ **Free Tier Available** - Both Vercel and Netlify offer generous free plans
+- ✅ **Custom Domain Support** - Use your own domain name
+- ✅ **SSL Included** - HTTPS enabled by default
+- ✅ **Auto-Deploy** - Push to GitHub, automatically redeploy
 
 **Required Environment Variables:**
 - `GOOGLE_API_KEY` - Your Google Gemini API key

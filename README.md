@@ -56,7 +56,7 @@
 
 <div align="center">
 
-- **Languages:**  
+  **Languages:**  
   ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
   ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter&logoColor=white)
 
@@ -69,10 +69,9 @@
   **Data:**  
   ![CSV](https://img.shields.io/badge/CSV-FFD700?style=for-the-badge)
 
- **Quality & DevOps:**  
+  **Quality & DevOps:**  
   ![Session Memory](https://img.shields.io/badge/Session_Memory-6A1B9A?style=for-the-badge)
   ![Structured Logs](https://img.shields.io/badge/Structured_Logs-00897B?style=for-the-badge)
-  ![CI](https://img.shields.io/badge/CI-212121?style=for-the-badge)
 
 </div>
 

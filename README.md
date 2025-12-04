@@ -129,9 +129,16 @@ logs/
 
 - **Web Interface (Recommended):**
   ```bash
+  python api/server.py
+  # Access: http://localhost:8000
+  ```
+  
+- **ADK Web Interface:**
+  ```bash
   adk web Academate
   # Access: http://127.0.0.1:8000
   ```
+  
 - **Command Line:**
   ```bash
   python -m chatbot.main
@@ -143,6 +150,33 @@ logs/
 python tests/test_agent.py
 python -c "from chatbot.evaluation import run_evaluations; print(run_evaluations())"
 ```
+
+---
+
+## 🚀 Deployment
+
+Deploy Academate to the cloud with **Vercel** or **Netlify** for global access!
+
+### Quick Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/sahilaw22/google-ai-agent-course-capstone)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sahilaw22/google-ai-agent-course-capstone)
+
+### Deployment Guide
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
+
+**Key Features:**
+- ✅ Web-based chat interface
+- ✅ Serverless deployment (no server management)
+- ✅ Automatic scaling
+- ✅ Free tier available on both platforms
+- ✅ Custom domain support
+
+**Required Environment Variables:**
+- `GOOGLE_API_KEY` - Your Google Gemini API key
+- `AGENT_MODEL` - (Optional) Default: `gemini-2.5-flash-lite`
+- `AGENT_TEMPERATURE` - (Optional) Default: `0.7`
 
 ---
 

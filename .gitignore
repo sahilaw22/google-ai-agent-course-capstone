@@ -43,8 +43,3 @@ Thumbs.db
 
 # Logs
 *.log
-
-# Deployment
-.vercel
-.netlify
-.output

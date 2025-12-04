@@ -1,207 +1,183 @@
-# Academate: College AI Agent
+<div align="center">
 
-Academate is an intelligent agent that helps students navigate college life. Built with the Google AI Agent Development Kit (ADK) and powered by Gemini 2.5 Flash Lite, it acts as an assistant for exam schedules, faculty info, and more.
+# <strong>ACADEMATE: Intelligent College AI Agent</strong>
 
-Students can ask questions like "When is my next exam?" or "Who teaches Data Structures?" instead of searching through portals.
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logo=github&logoColor=white)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Platform](https://img.shields.io/badge/platform-windows%20%7C%20macos%20%7C%20linux-lightgrey.svg?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/sahilaw22/google-ai-agent-course-capstone)
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
 
-### Problem — Fragmented Campus Knowledge
+</div>
 
-Students juggle portals, PDFs, and email threads just to answer basic questions: *When is the next lab exam? Which professor handles AI Ethics?* The cognitive load is high, response time is slow, and important deadlines slip. Administrative teams already maintain the data; what is missing is a single, trustworthy interface that speaks the student's language.
+---
 
-### Solution — Academate, the Campus Copilot
+<div align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=1976D2&center=true&vCenter=true&random=false&width=680&height=90&lines=Unify+College+Knowledge,+Answers+in+Seconds;Trustworthy+Audit-Ready+Intelligence" alt="Typing SVG" />
+</div>
 
-Academate turns those static datasets into a conversational experience. A Gemini 2.5 Flash Lite planner interprets intent, selects purpose-built CSV tools, and returns grounded answers with citations. Session memory carries context across turns so follow-up questions like “what about Tuesday?” remain coherent, while observability logs every exchange for governance.
+---
 
-### Value — Trustworthy Answers in Seconds
+## 🚀 Why Academate?
 
-*   **Time saved:** A single question replaces hunting through five systems.
-*   **Confidence:** Deterministic tool calls make every response audit-ready.
-*   **Scalability:** The same agent can onboard new departments by pointing to additional CSVs or databases.
+**College life is full of fragmented information:** portals, PDFs, emails, and confusion. Academate provides a smarter way for students and faculty to ask, “When is my next exam?” or “Who teaches Data Structures?” and get instant, complete, and audit-ready answers. Powered by Google Gemini 2.5 Flash Lite and GenAI Agent Development Kit, Academate transforms static campus data into interactive intelligence, saving time and reducing error.
 
-### Core Concept & Innovation
+---
 
-| Track Requirement | How Academate Delivers |
-| --- | --- |
-| Agent-first architecture | Gemini orchestrates custom CSV tools via ADK routing. |
-| Clear, meaningful use of agents | Natural-language reasoning plus structured tool execution handles ambiguous student phrasing without losing precision. |
-| Innovation & value | Combines session memory, observability, and an evaluation harness so student services can trust the answers before launch. |
+## 🌟 Key Features
 
-### Architecture & Journey Writeup
+<table align="center">
+<tr>
+<td align="center"><b>Natural Q&A</b><br>Ask about exams, results, staff, timetable, campus events</td>
+<td align="center"><b>Deterministic Tools</b><br>Gemini planner invokes robust, documented Python functions</td>
+<td align="center"><b>Session Memory</b><br>Remembers the context of multi-turn conversations</td>
+</tr>
+<tr>
+<td align="center"><b>Observability</b><br>Structured logs for audits & traceability</td>
+<td align="center"><b>Evaluation Harness</b><br>Automated testing for reliable answers</td>
+<td align="center"><b>Complete Coverage</b><br>Onboard new departments or datasets quickly</td>
+</tr>
+</table>
 
-1.  **Data ingestion:** Curated CSVs (timetables, exams, faculty, results) load through `chatbot/datasets.py`.
-2.  **Reasoning core:** `runtime.py` wires Gemini to the ADK router, deciding which tool to invoke.
-3.  **Memory & observability:** `chatbot/memory.py` stores recent turns; `chatbot/observability.py` streams logs for audits.
-4.  **Quality gate:** `chatbot/evaluation.py` executes deterministic checks before every demo, documented in notebook Step 8.
+---
 
-The project evolved across the 5-day track: Day 1 prototypes established the Gemini + ADK loop, Days 2–3 layered tools and memory, Day 4 added logging plus evaluation, and Day 5 packaged everything into the `Academate-College-Chatbot.ipynb` story and README rubric mapping you see here.
+🏗️ Architecture Overview
 
-## Why Agents?
+!![Architecture Diagram](assets/graph_image.png)
 
-Agents shine when a task requires reasoning plus deterministic tool use. Academate uses Gemini for planning and natural language, then routes to CSV-backed tools to retrieve facts. This loop means the responses stay conversational yet auditable—a strong fit for student services.
+* **Gemini LLM:** Understands and plans answers from conversational queries.
+* **CSV-backed Tools:** Deterministic Python functions provide reliable information from campus datasets.
+* **Session Memory:** Maintains chat history and context.
+* **Observability:** Logs every interaction for transparency and governance.
+* **Evaluation Harness:** Ensures every answer meets college-grade standards before going live.
 
-### Technical Architecture
+---
 
-1.  **Ingress:** `chatbot/runtime.py` exposes two runners (CLI via `python -m chatbot.main`, web via `adk web Academate`). Each request is normalized into the ADK router.
-2.  **Reasoning & Tooling:** Gemini 2.5 Flash Lite plans the response, then calls functions in `chatbot/tools.py`, which in turn query cached CSVs via `chatbot/datasets.py`.
-3.  **Memory & State:** `chatbot/memory.py` manages an in-process transcript list so multi-turn chats reuse prior answers without re-querying every dataset.
-4.  **Observability & Quality:** `chatbot/observability.py` appends structured JSON lines to `logs/agent.log`, while `chatbot/evaluation.py` offers deterministic pre-flight checks mirrored in notebook Step 8.
+## 🧮 Tech Stack
 
-## How It's Built (Architecture)
+<div align="center">
 
-![Architecture Diagram](assets/graph_image.png)
+- **Languages:**  
+  ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
+  ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter&logoColor=white)
 
-1.  **The Start:** It all begins in `chatbot/runtime.py`, which sets up the agent for the web or command line.
-2.  **The Brains:** Gemini figures out what you want and picks a tool from `chatbot/tools.py`, like `get_exam_schedule` or `get_faculty_info`.
-3.  **The Muscle:** The selected tool runs, querying CSVs via `chatbot/datasets.py` and returning results.
-4.  **Memory & Observability:** `chatbot/memory.py` keeps track of the conversation, while `chatbot/observability.py` logs every interaction.
-5.  **Quality Control:** Before any demo, `chatbot/evaluation.py` runs checks to ensure everything works as expected.
+- **AI Model:**  
+  ![Google Gemini 2.5 Flash Lite](https://img.shields.io/badge/Gemini-2.5_Flash_Lite-blue?style=for-the-badge)
 
-### Key Concepts Demonstrated
+- **Framework:**  
+  ![Google_ADK](https://img.shields.io/badge/Google_ADK-4285F4?style=for-the-badge)
 
-| Course Concept | Implementation Evidence |
-| --- | --- |
-| Tool-enabled reasoning | Gemini + ADK router chooses among six CSV-backed tools in `chatbot/tools.py`, each with docstrings describing behavior. |
-| Sessions & Memory | `SESSION_MEMORY` store plus notebook Step 6 screenshots show context carryover, preventing users from repeating parameters. |
-| Observability | CLI sessions emit traceable logs (`logs/agent.log`) with timestamps, turns, and tool names for governance reviews. |
-| Evaluation & Safety Nets | `run_evaluations()` validates timetable, exam, and calendar responses before demos; outputs are captured in the notebook for reproducibility. |
+- **Data:**  
+  ![CSV](https://img.shields.io/badge/CSV-FFD700?style=for-the-badge)
 
-### Implementation Notes
+- **Quality & DevOps:**  
+  ![Session Memory](https://img.shields.io/badge/Session_Memory-6A1B9A?style=for-the-badge)
+  ![Structured Logs](https://img.shields.io/badge/Structured_Logs-00897B?style=for-the-badge)
+  ![CI](https://img.shields.io/badge/CI-212121?style=for-the-badge)
 
-- **Code comments:** Complex blocks (tool routing, evaluation harness) include short comments describing intent and edge cases, per rubric guidance.
-- **Type-safe helpers:** Dataset loaders centralize schema validation to avoid repeated parsing logic across tools.
-- **Configuration hygiene:** Secrets live in `.env`; README explicitly warns not to check in API keys.
-- **Testing & CI hooks:** In addition to notebook proofs, `python tests/test_agent.py` exercises the tool layer, and the evaluation harness can be scripted in CI before recording demos.
+</div>
 
-### Effective Use of Gemini
+---
 
-- **Planning & decomposition:** Gemini 2.5 Flash Lite interprets free-form student prompts, extracts entities (course, day, instructor), and selects the right CSV tool call sequence.
-- **Grounded responses:** The model’s output is constrained to tool results with citations, ensuring Gemini augments data rather than hallucinating.
-- **Multi-turn reasoning:** Because Gemini sees the `SESSION_MEMORY`, it can resolve follow-ups like “what about labs?” without users restating context, demonstrating meaningful agent intelligence beyond simple retrieval.
+## 📦 Project Structure
 
-### Deployment & Reproduction
-
-- Local runs are documented (`python -m chatbot.main` or `adk web Academate`). If you deploy to Cloud Run or Agent Engine, document the steps, runtime image, and environment variables here; the architecture already isolates external dependencies to make that straightforward.
-- Every asset referenced in the video (diagram, notebook steps, log tail) lives in this repo so graders can reproduce the flow without extra instructions.
-
-## Solution Snapshot
-
-1. **Gemini LLM layer** interprets the request and decides which tool(s) to call.
-2. **Custom tools** fetch rows from curated CSV datasets (exam schedule, timetable, results, etc.).
-3. **Session memory** keeps short-term transcripts so follow-up questions have context.
-4. **Observability** sends each CLI turn to `logs/agent.log` for auditing.
-5. **Evaluation harness** (`chatbot/evaluation.py`) runs deterministic checks before demos.
-
-## Key Features
-
-Academate handles six core student needs:
-
-1.  Exam Schedules: Finds dates, times, and venues for upcoming exams.
-2.  Previous Papers: Retrieves links to past question papers.
-3.  Class Timetables: Shows daily or weekly schedules.
-4.  Faculty Info: Provides contact details, office hours, and research interests.
-5.  Academic Calendar: Tracks holidays, deadlines, and campus events.
-6.  Student Results: Checks grades and calculates SGPA (requires Student ID).
-
-## Technology Stack
-
-*   AI Model: Google Gemini 2.5 Flash Lite
-*   Framework: Google Gen AI Agent Development Kit (ADK)
-*   Language: Python 3.10+
-*   Data Storage: CSV system
-*   Memory: In-memory transcript store (`chatbot/memory.py`)
-*   Observability: Structured logs via `chatbot/observability.py`
-
-## Getting Started
-
-Follow these steps to run Academate locally.
-
-### 1. Prerequisites
-*   Python 3.10 or higher.
-*   A Google Cloud Project with the Gemini API enabled.
-
-### 2. Installation
-Install dependencies:
-```bash
-pip install -r requirements.txt
+```
+chatbot/
+ ├─ agent.py           # ADK web/cli entry
+ ├─ runtime.py         # Gemini core and router
+ ├─ tools.py           # Custom campus Q&A tools
+ ├─ datasets.py        # Loads & caches campus data
+ ├─ memory.py          # Session/context management
+ ├─ observability.py   # Structured logs
+ ├─ evaluation.py      # Evaluation/test harness
+data/
+ └─ *.csv              # Timetable, exams, faculty, results
+tests/
+ └─ test_agent.py      # Unit tests
+Academate-College-Chatbot.ipynb  # Walkthrough, reproducibility
+logs/
+ └─ agent.log          # Interaction logs
 ```
 
-### 3. Configuration
-Create a .env file in the root directory and add your API key:
-```ini
-GOOGLE_API_KEY=your_api_key_here
-AGENT_MODEL=gemini-2.5-flash-lite
-AGENT_TEMPERATURE=0.7
-```
+---
 
-### 4. Run the Agent
+## 🛠️ How to Get Started
 
-You can run the agent in two ways:
+### Prerequisites
 
-**Option A: Web Interface (Recommended)**
-This launches a visual chat interface in your browser.
-```bash
-adk web Academate
-```
-Then open http://127.0.0.1:8000 in your browser.
+- Python **3.10+**
+- Pip
+- Google Cloud Project (**Gemini API enabled**)
 
-**Option B: Command Line**
-This runs the agent directly in your terminal.
-```bash
-python -m chatbot.main
-```
+### Installation
 
-## Project Structure
+1. Clone the repository
+   ```bash
+   git clone https://github.com/sahilaw22/google-ai-agent-course-capstone.git
+   cd google-ai-agent-course-capstone
+   ```
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Configure environment
+   - Copy `.env.example` to `.env` and provide your Google API key:
+   ```ini
+   GOOGLE_API_KEY=your_api_key_here
+   AGENT_MODEL=gemini-2.5-flash-lite
+   ```
 
-*   chatbot/: The core logic.
-    *   agent.py: Entry point for the ADK Web server.
-    *   runtime.py: Configures the agent and manages the chat loop.
-    *   tools.py: Functions to fetch data.
-    *   datasets.py: Loads and caches CSV data.
-*   data/: Contains CSV files for students, exams, faculty, etc.
-*   tests/: Unit and smoke tests.
-*   Academate-College-Chatbot.ipynb: A Jupyter Notebook walkthrough.
-    *   Steps 6–8 show session memory, logging, and the automated evaluation harness.
+### Running the Agent
 
-## Testing
+- **Web Interface (Recommended):**
+  ```bash
+  adk web Academate
+  # Access: http://127.0.0.1:8000
+  ```
+- **Command Line:**
+  ```bash
+  python -m chatbot.main
+  ```
 
-Run the test suite to verify everything is working:
+### Testing
 
 ```bash
 python tests/test_agent.py
-```
-
-You can also run the deterministic evaluation harness (identical to notebook Step 8):
-
-```bash
 python -c "from chatbot.evaluation import run_evaluations; print(run_evaluations())"
 ```
 
-## Observability & Logs
+---
 
-CLI sessions append structured entries to `logs/agent.log`. Use this command to view the latest turns:
+## 🧪 Sample Queries
 
-```bash
-tail -n 20 logs/agent.log
-```
+- When is my next lab exam?
+- Show me the AI timetable.
+- Who teaches Ethics?
+- Get my SGPA for student ID 2024XYZ.
+- Which events are scheduled next week?
 
-## Deployment Notes
+---
 
-The agent currently runs locally through the ADK CLI (`python -m chatbot.main`) or web runner (`adk web Academate`). If you deploy to Cloud Run or Agent Engine, capture the endpoint URL and describe the steps in your submission for the deployment bonus.
+## 🤝 Contribute
 
-## Feature Summary for Rubric
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/AmazingIdea`)
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
 
-| Concept | Evidence |
-| --- | --- |
-| LLM agent + custom tools | `chatbot/runtime.py`, notebook Steps 1–5 |
-| Sessions & Memory | `chatbot/memory.py`, notebook Step 6 |
-| Observability | `chatbot/observability.py`, notebook Step 7 |
-| Evaluation | `chatbot/evaluation.py`, notebook Step 8 |
+---
 
-Use this table in your write-up to map requirements directly.
+## 📜 License
 
-## Future Improvements
+<div align="center">
+MIT License https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge
+</div>
 
-*   Database Integration: Migrate from CSV to SQL.
-*   Voice Interface: Add speech-to-text.
-*   Personalized Alerts: Notify students about deadlines.
+---
 
+<div align="center">
+
+![Wave](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=70&section=footer&animation=twinkling)
+<br>
+Made with passion by <strong>Sahil</strong>
+</div>

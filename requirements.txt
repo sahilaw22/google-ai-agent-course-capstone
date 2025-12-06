@@ -1,4 +1,3 @@
-# Academate - Intelligent College Assistant Agent
 # Python Dependencies
 
 # Google AI Agent Development Kit
